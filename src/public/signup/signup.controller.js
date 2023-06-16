@@ -29,15 +29,16 @@
               } else {
                 UserService.setUser(user);
                 $scope.favoriteDishError = null;
-  
+                
                 $scope.user.firstname = '';
                 $scope.user.lastname = '';
                 $scope.user.email = '';
                 $scope.user.contact = '';
                 $scope.user.favoriteDish = '';
-  
                 $scope.signupForm.$setPristine();
                 $scope.signupForm.$setUntouched();
+                alert("Menu successfully registered");
+
               }
             });
         }
